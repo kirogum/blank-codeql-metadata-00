@@ -29,7 +29,9 @@ jobs:
         path: ./yoda
     
     - name: Listing
-      run: ls -l
+      run: |
+        pwd
+        ls -l
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
