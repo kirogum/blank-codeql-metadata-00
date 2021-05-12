@@ -27,6 +27,9 @@ jobs:
       with:
         repository: kirogum/blank-codeql-metadata-01
         path: ./yoda
+    
+    - name: Listing
+      run: ls -l
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
